@@ -1,0 +1,21 @@
+server:
+  port: 7007
+  servlet:
+    # 应用的访问路径
+    context-path: /
+spring:
+  application:
+    name: rabbitmq-customer
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
+    listener:
+      direct:
+        retry:
+          enabled: false
+          max-attempts: 3
+          initial-interval: 5000
+        acknowledge-mode: manual
