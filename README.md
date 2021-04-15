@@ -13,4 +13,7 @@ Word Record
   # 集成spring boot
   # 集成zookeeper注册中心
   # 集成Spring Cloud hystrix
-
+# 4.RabbitMQ
+  # 集成spring boot
+  # 服务消费者
+  # 服务提供者
